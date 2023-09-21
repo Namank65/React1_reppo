@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,#2af598, #22e4ac, #1bd7bb, #14c9cb, #0fbed8, #08b3e5);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+#logo-img{
+    width: 100px;
+}
+.logo-container{
+    padding-left: 30px;
+}
+.nav-items ul{
+    display: flex;
+}
+.nav-items ul li {
+    margin: 20px;
+    padding: 20px;
+    list-style-type: none;
+}
+.res-cards{
+    padding: 5px;
+    background: #f0f0f0;
+    margin: 20px 20px;
+    width: 200px;
+}
+.res-cards:hover{
+    background: #6fdbec;
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#res-card-img{
+    width: 100%;
+}
+#filter-btn{
+    margin:20px 20px;
+    padding: 10px 20px;
+}
+.shimar-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimarCard{
+    margin: 20px;
+    width: 200px;
+    height: 350px;
+    background: #f0f0f0;
+}
+#login-btn{
+    margin: 10px 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+.filter{
+    display: flex;
+}
+#inputbox{
+    margin: 20px;
+    margin-right:0 ;
+    padding: 10px;
+    border-radius: 5px;
+}
+#searchbtn{
+    padding:10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+} */

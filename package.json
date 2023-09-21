@@ -1,0 +1,40 @@
+{
+  "name": "react1",
+  "version": "1.0.0",
+  "description": "This is my first react code",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Namank65/React1_reppo.git"
+  },
+  "keywords": [
+    "react",
+    "Namaste",
+    "react"
+  ],
+  "author": "Souamya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Namank65/React1_reppo/issues"
+  },
+  "homepage": "https://github.com/Namank65/React1_reppo#readme",
+  "devDependencies": {
+    "auto": "^11.0.4",
+    "parcel": "^2.9.3",
+    "postcss": "^8.4.30",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0"
+  },
+  "browsersList": [
+    "last 2 versions"
+  ]
+}
