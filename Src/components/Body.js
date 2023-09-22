@@ -1,4 +1,4 @@
-import ResCards from "./ResCards";
+import ResCards, { withIsOpenLable } from "./ResCards";
 import { useState, useEffect } from "react";
 import Shimar from "./shimarUi";
 import { Link } from "react-router-dom";
@@ -10,6 +10,10 @@ const Body = () => {
   const [filterdResturents, setFilteredResturents] = useState([]);
 
   const [searchText, setSearchText] = useState("");
+
+  const IsOpendLabled = withIsOpenLable(ResCards);
+
+  console.log(listOfResturent)
 
   useEffect(() => {
     fetchData()
@@ -49,7 +53,10 @@ const Body = () => {
       <div className="flex flex-wrap ">
         {
           filterdResturents.map((restaurant) => {
-            return <Link key={restaurant.info.id} to={"/restureant/" + restaurant.info.id}><ResCards resData={restaurant} /></Link>
+            return <Link
+             key={restaurant.info.id} to={"/restureant/" + restaurant.info.id}>
+              {restaurant.info.isOpen ? (<IsOpendLabled resData={restaurant} />) : (<ResCards resData={restaurant} />)}
+              </Link>
           })
         }
       </div>
