@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Shimar from "./shimarUi";
 import useRestureantMenu from "./useRestureantMenu";
@@ -11,6 +11,8 @@ const RestureantMenu = () => {
 
     const { resId } = useParams();
     const resInfo = useRestureantMenu(resId);
+
+    const [showIndex, setshowIndex] = useState(1);
 
 
     if (resInfo === null) return <Shimar />;
@@ -36,14 +38,7 @@ const RestureantMenu = () => {
                 setVegChecker(vegNonveg);
             }}>{vegNonvegBtn}</button> */}
 
-            {/* <ul>
-                {itemCards.map((item) => {
-                    return <li key={item.card.info.id}> {item.card.info.name} - {"Rs - "} {item.card.info.price / 100}</li>
-                }
-                )};
-            </ul> */}
-
-            {categories.map((catogery) => <ResCatogery Data={catogery?.card?.card}/>)}
+            {categories.map((catogery, index) =>   <ResCatogery key={catogery.card.card.title} Data={catogery?.card?.card} showItems={index === showIndex ? true : false}/> )}
         </div>
     );
 };
