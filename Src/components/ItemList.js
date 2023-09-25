@@ -1,5 +1,5 @@
 const ItemList = ({ items }) => {
-    console.log(items)
+    // console.log(items)
     return (
         <div>
             {items.map((items) => (<div key={items.card.info.id} className="p-2 m-2 border-b-2 text-left flex justify-between">

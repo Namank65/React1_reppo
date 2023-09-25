@@ -13,7 +13,7 @@ const Body = () => {
 
   const IsOpendLabled = withIsOpenLable(ResCards);
 
-  console.log(listOfResturent)
+  // console.log(listOfResturent)
 
   useEffect(() => {
     fetchData()
@@ -23,7 +23,7 @@ const Body = () => {
     const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=25.5940947&lng=85.1375645&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
 
     const json = await data.json();
-    console.log(json)
+    // console.log(json)
     setListOfResturent(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     setFilteredResturents(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   }

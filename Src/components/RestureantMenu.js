@@ -12,7 +12,7 @@ const RestureantMenu = () => {
     const { resId } = useParams();
     const resInfo = useRestureantMenu(resId);
 
-    const [showIndex, setshowIndex] = useState(1);
+    const [showIndex, setshowIndex] = useState(0);
 
 
     if (resInfo === null) return <Shimar />;
@@ -23,7 +23,7 @@ const RestureantMenu = () => {
 
     const categories = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter(c => c.card?.["card"]?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
 
-    console.log(categories)
+    // console.log(categories)
 
     return (
         <div className="text-center">
@@ -38,7 +38,7 @@ const RestureantMenu = () => {
                 setVegChecker(vegNonveg);
             }}>{vegNonvegBtn}</button> */}
 
-            {categories.map((catogery, index) =>   <ResCatogery key={catogery.card.card.title} Data={catogery?.card?.card} showItems={index === showIndex ? true : false}/> )}
+            {categories.map((catogery, index) =>   <ResCatogery key={catogery.card.card.title} Data={catogery?.card?.card} showItems={index === showIndex ? true : false} setshowIndex={() => setshowIndex(index)} /> )}
         </div>
     );
 };
