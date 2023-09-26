@@ -1,7 +1,8 @@
 import ResCards, { withIsOpenLable } from "./ResCards";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Shimar from "./shimarUi";
 import { Link } from "react-router-dom";
+import UserContext from "./UserContext";
 
 
 const Body = () => {
@@ -12,6 +13,7 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   const IsOpendLabled = withIsOpenLable(ResCards);
+  const {loggedInUser,setUserName} = useContext(UserContext);
 
   // console.log(listOfResturent)
 
@@ -32,7 +34,7 @@ const Body = () => {
     <div className="body">
       <div className="flex">
         <div className="m-4 p-4">
-          <input type="text" className=" border border-solid border-black mr-3 p-1 rounded-md" value={searchText} onChange={(e) => { setSearchText(e.target.value); }} />
+          <input type="text" className="border border-solid border-black mr-3 p-1 rounded-md" value={searchText} onChange={(e) => { setSearchText(e.target.value); }} />
 
           <button className="rounded-md p-1 px-4 m-1 bg-green-200 hover:bg-green-400" onClick={() => {
             const filterdResturents = listOfResturent.filter((rest) => rest.info.name.toLowerCase().includes(searchText.toLowerCase()));
@@ -47,6 +49,11 @@ const Body = () => {
             setFilteredResturents(filterList)
           }}>
             Top Rated restaurants</button>
+        </div>
+
+        <div className="m-4 p-4">
+          <label>User Name -- </label>
+          <input className="border border-black rounded-md" value={loggedInUser} onChange={(e) => setUserName(e.target.value)}></input>
         </div>
       </div>
 
