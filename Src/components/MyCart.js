@@ -8,7 +8,7 @@ const MyCart = () => {
     const dispatch = useDispatch();
 
     const clearCartitems = () => {
-        dispatch(removeItems())
+        dispatch(removeItems());
     };
 
 
