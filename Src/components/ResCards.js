@@ -14,7 +14,6 @@ const ResCards = (props) => {
   };
 
   // higher order component
-
   export const withIsOpenLable = (ResCards) => {
     return (props) => {
       return(
