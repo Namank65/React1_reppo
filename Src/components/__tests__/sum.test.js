@@ -1,4 +1,4 @@
-import { sum } from "../sum";
+import { sum } from "../Sum";
 
 test("sum should calculate sum of two numbers", () => {
 
