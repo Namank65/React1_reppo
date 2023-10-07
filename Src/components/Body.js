@@ -34,7 +34,7 @@ const Body = () => {
     <div className="body">
       <div className="flex">
         <div className="m-4 p-4">
-          <input type="text" className="border border-solid border-black mr-3 p-1 rounded-md" value={searchText} onChange={(e) => { setSearchText(e.target.value); }} />
+          <input type="text" data-testid="searchInput" className="border border-solid border-black mr-3 p-1 rounded-md" value={searchText} onChange={(e) => { setSearchText(e.target.value); }} />
 
           <button className="rounded-md p-1 px-4 m-1 bg-green-200 hover:bg-green-400" onClick={() => {
             const filterdResturents = listOfResturent.filter((rest) => rest.info.name.toLowerCase().includes(searchText.toLowerCase()));
