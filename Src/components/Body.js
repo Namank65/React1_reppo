@@ -45,7 +45,7 @@ const Body = () => {
         <div className="m-4 p-4">
           <button className="rounded-md p-1 px-5  m-1 bg-slate-300 hover:bg-slate-400" onClick={() => {
             const filterList = listOfResturent.filter(
-              (res) => res.info.avgRating >= 4.1);
+              (res) => res.info.avgRating >= 4);
             setFilteredResturents(filterList)
           }}>
             Top Rated restaurants</button>

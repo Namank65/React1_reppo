@@ -1,41 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1696700915463" clover="3.2.0">
-  <project timestamp="1696700915464" name="All files">
-    <metrics statements="29" coveredstatements="25" conditionals="4" coveredconditionals="3" methods="13" coveredmethods="10" elements="46" coveredelements="38" complexity="0" loc="29" ncloc="29" packages="1" files="2" classes="2"/>
-    <file name="Body.js" path="D:\VS.code\React1\Src\components\Body.js">
-      <metrics statements="22" coveredstatements="18" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="7"/>
-      <line num="8" count="1" type="stmt"/>
-      <line num="10" count="4" type="stmt"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="15" count="4" type="stmt"/>
-      <line num="16" count="4" type="stmt"/>
-      <line num="20" count="4" type="stmt"/>
-      <line num="21" count="1" type="stmt"/>
-      <line num="24" count="4" type="stmt"/>
-      <line num="25" count="1" type="stmt"/>
-      <line num="27" count="1" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
-      <line num="30" count="1" type="stmt"/>
-      <line num="33" count="4" type="cond" truecount="2" falsecount="0"/>
-      <line num="37" count="1" type="stmt"/>
-      <line num="40" count="9" type="stmt"/>
-      <line num="41" count="1" type="stmt"/>
-      <line num="47" count="0" type="stmt"/>
-      <line num="48" count="0" type="stmt"/>
-      <line num="49" count="0" type="stmt"/>
-      <line num="56" count="0" type="stmt"/>
-      <line num="63" count="19" type="stmt"/>
-    </file>
-    <file name="ResCards.js" path="D:\VS.code\React1\Src\components\ResCards.js">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <line num="1" count="2" type="stmt"/>
-      <line num="2" count="24" type="stmt"/>
-      <line num="3" count="23" type="stmt"/>
-      <line num="5" count="19" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="19" count="4" type="stmt"/>
-      <line num="20" count="19" type="stmt"/>
-    </file>
+<coverage generated="1696789618311" clover="3.2.0">
+  <project timestamp="1696789618311" name="All files">
+    <metrics statements="33" coveredstatements="32" conditionals="8" coveredconditionals="7" methods="14" coveredmethods="12" elements="55" coveredelements="51" complexity="0" loc="33" ncloc="33" packages="2" files="3" classes="3"/>
+    <package name="components">
+      <metrics statements="32" coveredstatements="31" conditionals="8" coveredconditionals="7" methods="14" coveredmethods="12"/>
+      <file name="Body.js" path="D:\VS.code\React1\Src\components\Body.js">
+        <metrics statements="22" coveredstatements="21" conditionals="4" coveredconditionals="3" methods="10" coveredmethods="9"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="10" count="7" type="stmt"/>
+        <line num="11" count="7" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="20" count="7" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="24" count="7" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="33" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="40" count="9" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="9" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="63" count="33" type="stmt"/>
+      </file>
+      <file name="RestureantMenu.js" path="D:\VS.code\React1\Src\components\RestureantMenu.js">
+        <metrics statements="10" coveredstatements="10" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="3"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="41" count="2" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="reduxStore.js" path="D:\VS.code\React1\Src\utils\reduxStore.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

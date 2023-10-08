@@ -33,3 +33,21 @@ it("Should search reslist for New text input", async () => {
     const afterSearch = screen.getAllByTestId("resCard")
     expect(afterSearch.length).toBe(1)
 });
+
+it("Should filter top rated resturents", async () => {
+    await act(async () => render(
+        <BrowserRouter>
+        <Body/>
+        </BrowserRouter>
+    ));
+
+    const searchFilter = screen.getAllByTestId("resCard")
+    expect(searchFilter.length).toBe(9)
+
+    const topRatedBtn = screen.getByRole("button", {name:"Top Rated restaurants"})
+    fireEvent.click(topRatedBtn)
+
+    const cardAfterFilter = screen.getAllByTestId("resCard")
+    expect(cardAfterFilter.length).toBe(5)
+
+})
